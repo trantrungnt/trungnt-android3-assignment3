@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Employee</string>
     <string name="activity_name">Add Employee</string>
+    <string name="label_name">Name: </string>
 </resources>
