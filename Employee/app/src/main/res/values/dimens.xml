@@ -6,4 +6,8 @@
     <dimen name="text_view_name_height">30dp</dimen>
     <dimen name="edit_text_name_width">300dp</dimen>
     <dimen name="edit_text_name_height">30dp</dimen>
+    <dimen name="text_view_age_width">60dp</dimen>
+    <dimen name="text_view_age_height">30dp</dimen>
+    <dimen name="edit_text_age_width">300dp</dimen>
+    <dimen name="edit_text_age_height">30dp</dimen>
 </resources>

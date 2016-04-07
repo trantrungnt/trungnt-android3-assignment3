@@ -25,4 +25,19 @@
             android:layout_height="@dimen/edit_text_name_height" />
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/text_view_age_width"
+            android:layout_height="@dimen/text_view_age_height"
+            android:text="@string/label_name" />
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="@dimen/edit_text_age_width"
+            android:layout_height="@dimen/edit_text_age_height" />
+    </LinearLayout>
+
 </LinearLayout>
