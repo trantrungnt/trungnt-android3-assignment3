@@ -1,6 +1,10 @@
 package techkids.mad3.trungnt.employee;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -45,7 +49,47 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
         int id = v.getId();
 
         if (id == R.id.editTextBirthday)
-            datePickerDialogBirthday.show();
+                                datePickerDialogBirthday.show();
+
+        if (id == R.id.btnAdd)
+        {
+            if (
+                    editTextName.getText().length() == 0
+                 || editTextName.getText().toString().isEmpty()
+                 || editTextAge.getText().length() == 0
+                 || editTextAge.getText().toString().isEmpty()
+                 || editTextBirthday.getText().length() == 0
+                 || editTextBirthday.getText().toString().isEmpty()
+            )
+
+            {
+                Context context = this;
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+                // set title
+                alertDialogBuilder.setTitle("WARNING ...");
+
+                // set dialog message
+                alertDialogBuilder
+                        .setMessage("You need to type your data!")
+                        .setCancelable(false)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+                // create alert dialog
+                AlertDialog alertDialog = alertDialogBuilder.create();
+
+                // show it
+                alertDialog.show();
+            }else
+            {
+                //luu du lieu hoac hien thi du lieu ....
+
+
+            }
+        }
     }
 
     //dinh nghia phuong thuc hien thi Hop thoai Calendar trong editTextBirthday
