@@ -54,4 +54,12 @@
             android:layout_width="@dimen/edit_text_birthday_width"
             android:layout_height="@dimen/edit_text_birthday_height" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="@string/label_button_add"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/button_add_margin_top"
+        android:layout_width="@dimen/button_add_width"
+        android:layout_height="@dimen/button_add_height" />
 </LinearLayout>
