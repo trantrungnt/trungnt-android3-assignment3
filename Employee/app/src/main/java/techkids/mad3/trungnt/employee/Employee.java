@@ -1,9 +1,11 @@
 package techkids.mad3.trungnt.employee;
 
+import java.io.Serializable;
+
 /**
  * Created by TrungNT on 4/8/2016.
  */
-public class Employee {
+public class Employee implements Serializable {
     private String name;
     private String age;
     private String birthday;
@@ -22,7 +24,7 @@ public class Employee {
     {
         this.name = "";
         this.age = "";
-        this.birthday;
+        this.birthday = "";
     }
 
     public Employee(String name, String age, String birthday)
