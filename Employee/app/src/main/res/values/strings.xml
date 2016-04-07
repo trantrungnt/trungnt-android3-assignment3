@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Employee</string>
+    <string name="activity_name">Add Employee</string>
 </resources>
