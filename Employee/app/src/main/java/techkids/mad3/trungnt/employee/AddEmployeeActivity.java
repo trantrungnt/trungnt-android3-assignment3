@@ -86,8 +86,8 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
             }else
             {
                 //luu du lieu hoac hien thi du lieu ....
-
-
+                Intent intent = new Intent(AddEmployeeActivity.this, DisplayActivity.class);
+                startActivity(intent);
             }
         }
     }
