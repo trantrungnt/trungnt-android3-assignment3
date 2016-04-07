@@ -86,7 +86,15 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
             }else
             {
                 //luu du lieu hoac hien thi du lieu ....
+                String name = editTextName.getText().toString();
+                String age = editTextAge.getText().toString();
+                String birthday = editTextBirthday.getText().toString();
+
+                Employee employee = new Employee(name, age, birthday);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("emp1", employee);
                 Intent intent = new Intent(AddEmployeeActivity.this, DisplayActivity.class);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         }
