@@ -20,11 +20,13 @@
     <dimen name="HeaderTextStyle_width">350dp</dimen>
     <dimen name="HeaderTextStyle_height">4dp</dimen>
     <dimen name="linear_layout_horizontal_width">350dp</dimen>
-    <dimen name="linear_layout_horizontal_height">50dp</dimen>
+    <dimen name="linear_layout_horizontal_height">30dp</dimen>
     <dimen name="linear_layout_vertical_margin_left">20dp</dimen>
     <dimen name="linear_layout_horizontal_margintop">10dp</dimen>
     <dimen name="text_view_display_name_width">300dp</dimen>
     <dimen name="text_view_display_name_height">30dp</dimen>
     <dimen name="header_text_style_margintop">10dp</dimen>
     <dimen name="linear_layout_vertical_margin_right">20dp</dimen>
+    <dimen name="text_view_display_age_width">300dp</dimen>
+    <dimen name="text_view_display_age_height">30dp</dimen>
 </resources>

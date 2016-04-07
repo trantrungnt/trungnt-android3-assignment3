@@ -34,5 +34,20 @@
                 android:layout_width="@dimen/text_view_display_name_width"
                 android:layout_height="@dimen/text_view_display_name_height" />
         </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/linear_layout_horizontal_margintop"
+            android:layout_width="@dimen/linear_layout_horizontal_width"
+            android:layout_height="@dimen/linear_layout_horizontal_height">
+
+            <TextView
+                android:layout_width="@dimen/text_view_age_width"
+                android:layout_height="@dimen/text_view_age_height"
+                android:text="@string/label_age" />
+            <TextView
+                android:id="@+id/textViewDisplayAge"
+                android:layout_width="@dimen/text_view_display_age_width"
+                android:layout_height="@dimen/text_view_display_age_height" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
