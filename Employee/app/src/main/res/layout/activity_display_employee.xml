@@ -5,6 +5,8 @@
 
     <LinearLayout
         android:orientation="vertical"
+        android:layout_marginLeft="@dimen/linear_layout_vertical_margin_left"
+        android:layout_marginRight="@dimen/linear_layout_vertical_margin_right"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -14,7 +16,23 @@
             android:layout_height="@dimen/HeaderTextStyle_height"
             android:background="@color/colorBlue"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_marginTop="@dimen/header_text_style_margintop"
+        />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/linear_layout_horizontal_margintop"
+            android:layout_width="@dimen/linear_layout_horizontal_width"
+            android:layout_height="@dimen/linear_layout_horizontal_height">
+
+            <TextView
+                android:layout_width="@dimen/text_view_name_width"
+                android:layout_height="@dimen/text_view_name_height"
+                android:text="@string/label_name" />
+            <TextView
+                android:id="@+id/textViewDisplayName"
+                android:layout_width="@dimen/text_view_display_name_width"
+                android:layout_height="@dimen/text_view_display_name_height" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
