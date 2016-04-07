@@ -33,11 +33,25 @@
         <TextView
             android:layout_width="@dimen/text_view_age_width"
             android:layout_height="@dimen/text_view_age_height"
-            android:text="@string/label_name" />
+            android:text="@string/label_age" />
         <EditText
             android:id="@+id/editTextAge"
             android:layout_width="@dimen/edit_text_age_width"
             android:layout_height="@dimen/edit_text_age_height" />
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/text_view_birthday_width"
+            android:layout_height="@dimen/text_view_birthday_height"
+            android:text="@string/label_birthday" />
+        <EditText
+            android:id="@+id/editTextBirthday"
+            android:layout_width="@dimen/edit_text_birthday_width"
+            android:layout_height="@dimen/edit_text_birthday_height" />
+    </LinearLayout>
 </LinearLayout>

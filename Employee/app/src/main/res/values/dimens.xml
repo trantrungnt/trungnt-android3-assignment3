@@ -10,4 +10,8 @@
     <dimen name="text_view_age_height">30dp</dimen>
     <dimen name="edit_text_age_width">300dp</dimen>
     <dimen name="edit_text_age_height">30dp</dimen>
+    <dimen name="text_view_birthday_width">60dp</dimen>
+    <dimen name="text_view_birthday_height">30dp</dimen>
+    <dimen name="edit_text_birthday_width">300dp</dimen>
+    <dimen name="edit_text_birthday_height">30dp</dimen>
 </resources>
