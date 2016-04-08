@@ -11,11 +11,12 @@
         <ListView
             android:id="@+id/listViewListEmployee"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="@dimen/list_view_employee_height">
         </ListView>
 
         <Button
             android:id="@+id/btnBack"
+            android:keepScreenOn="true"
             android:layout_gravity="center"
             android:text="@string/label_button_back"
             android:layout_width="@dimen/button_layout_width"

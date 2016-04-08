@@ -18,13 +18,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.Vector;
 
 public class AddEmployeeActivity extends AppCompatActivity implements View.OnClickListener{
     EditText editTextName, editTextAge, editTextBirthday;
     Button btnAdd;
     DatePickerDialog datePickerDialogBirthday;
     DateFormat dateFormatter;
-    static ArrayList arrListEmployee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,14 +93,12 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
                 String birthday = editTextBirthday.getText().toString();
 
                 Employee employee = new Employee(name, age, birthday);
-                String emp = employee.getName() + "\n" + employee.getAge() + "\n" + employee.getBirthday();
-                arrListEmployee = new ArrayList();
-                arrListEmployee.add(emp);
-                Bundle bundle = new Bundle();
-                bundle.putStringArrayList("arrListEmp", arrListEmployee);
+                //String emp = employee.getName() + "\n" + employee.getAge() + "\n" + employee.getBirthday();
+                EmployeeManager.getInstance().getArrEmployee().addElement(employee);
+
                 Intent intent = new Intent(AddEmployeeActivity.this, DisplayActivity.class);
-                intent.putExtras(bundle);
                 startActivity(intent);
+                this.finish();
             }
         }
     }
