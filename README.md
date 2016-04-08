@@ -12,4 +12,4 @@
 + Dùng hệ điều hành ảo Genymotion: sử dụng api18 và hệ điều hành Android version 4.3
 
 ##Demo bài tập
-+ [Video demo bài tập Assigment xem tại đây](https://youtu.be/wch_cK3ha2U)
++ [Video demo bài tập Assigment số 3 xem tại đây](https://youtu.be/wch_cK3ha2U)
