@@ -16,11 +16,9 @@ import java.util.Vector;
  * Created by TrungNT on 4/7/2016.
  */
 public class DisplayActivity extends AppCompatActivity {
-    Employee employee;
-    Bundle bundle;
-    ListView listViewEmployee;
-    Button btnBack;
-    ArrayList<String> arrayListEmployee;
+    private ListView listViewEmployee;
+    private Button btnBack;
+    private ArrayList<String> arrayListEmployee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -21,10 +21,10 @@ import java.util.Locale;
 import java.util.Vector;
 
 public class AddEmployeeActivity extends AppCompatActivity implements View.OnClickListener{
-    EditText editTextName, editTextAge, editTextBirthday;
-    Button btnAdd;
-    DatePickerDialog datePickerDialogBirthday;
-    DateFormat dateFormatter;
+    private EditText editTextName, editTextAge, editTextBirthday;
+    private Button btnAdd;
+    private DatePickerDialog datePickerDialogBirthday;
+    private DateFormat dateFormatter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
