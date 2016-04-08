@@ -3,11 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listViewListEmployee"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
+        <ListView
+            android:id="@+id/listViewListEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
 
-    </ListView>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_gravity="center"
+            android:text="@string/label_button_back"
+            android:layout_width="@dimen/button_layout_width"
+            android:layout_height="@dimen/button_layout_height" />
+    </LinearLayout>
+
 </ScrollView>

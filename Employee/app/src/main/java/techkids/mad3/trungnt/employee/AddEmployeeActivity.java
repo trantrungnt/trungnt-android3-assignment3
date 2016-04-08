@@ -15,6 +15,7 @@ import android.widget.EditText;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -23,6 +24,7 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
     Button btnAdd;
     DatePickerDialog datePickerDialogBirthday;
     DateFormat dateFormatter;
+    static ArrayList arrListEmployee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,8 +93,11 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
                 String birthday = editTextBirthday.getText().toString();
 
                 Employee employee = new Employee(name, age, birthday);
+                String emp = employee.getName() + "\n" + employee.getAge() + "\n" + employee.getBirthday();
+                arrListEmployee = new ArrayList();
+                arrListEmployee.add(emp);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("emp1", employee);
+                bundle.putStringArrayList("arrListEmp", arrListEmployee);
                 Intent intent = new Intent(AddEmployeeActivity.this, DisplayActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
