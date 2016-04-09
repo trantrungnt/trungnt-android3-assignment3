@@ -90,4 +90,5 @@ private void loadListEmployee()
 + [Tham khảo cách làm tròn 4 góc của nút Button](http://belencruz.com/2012/12/rounded-button-with-shadow-in-android/)
 + [How to customize different buttons in Android](http://mrbool.com/how-to-customize-different-buttons-in-android/27747)
 + [Change style of button](http://slidenerd.com/2014/09/01/3-making-buttons-with-rounded-corners-custom-drawables-in-android/)
++ [Sử dụng Application Object trong Android](https://www.mobomo.com/2011/05/how-to-use-application-object-of-android/)
 
