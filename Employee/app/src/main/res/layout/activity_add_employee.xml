@@ -60,6 +60,7 @@
         android:id="@+id/btnAdd"
         android:text="@string/label_button_add"
         android:layout_gravity="center"
+        android:background="@drawable/button_shape"
         android:layout_marginTop="@dimen/button_add_margin_top"
         android:layout_width="@dimen/button_add_width"
         android:layout_height="@dimen/button_add_height" />
