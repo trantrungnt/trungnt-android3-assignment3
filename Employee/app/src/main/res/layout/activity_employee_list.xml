@@ -6,6 +6,7 @@
     <TextView
         android:id="@+id/txtDisplayName"
         android:textAlignment="textStart"
+        android:layout_marginLeft="@dimen/text_view_margin_left"
         android:textSize="@dimen/text_view_text_size"
         android:layout_width="@dimen/text_view_display_name_width"
         android:layout_height="@dimen/text_view_display_name_height" />
@@ -14,14 +15,16 @@
         android:id="@+id/txtDisplayAge"
         android:textAlignment="textEnd"
         android:textColor="@color/colorTextAge"
+        android:layout_marginLeft="@dimen/text_view_margin_left"
         android:textSize="@dimen/text_view_text_size"
         android:layout_width="@dimen/text_view_display_age_width"
         android:layout_height="@dimen/text_view_display_age_height" />
     <TextView
         android:id="@+id/txtDisplayBirthday"
         android:textAlignment="textEnd"
-        android:textSize="@dimen/text_view_text_size"
+        android:layout_marginLeft="@dimen/text_view_margin_left"
         android:textColor="@color/colorTextBirthday"
+        android:textSize="@dimen/text_view_text_size"
         android:layout_width="@dimen/text_view_display_birthday_width"
         android:layout_height="@dimen/text_view_display_birthday_height" />
 </LinearLayout>
