@@ -73,6 +73,10 @@ private void loadListEmployee()
     }
 ```
 
++ Thuộc tính android:keepScreenOn="true" sẽ giữ cho nút Button không bị Scrolll
+```
+    android:keepScreenOn="true"
+```
 
 ##Môi trường phát triển
 + Bộ công cụ Android Studio 
