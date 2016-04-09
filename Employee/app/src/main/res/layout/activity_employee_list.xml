@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtDisplayName"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/text_view_text_size"
+        android:layout_width="@dimen/text_view_display_name_width"
+        android:layout_height="@dimen/text_view_display_name_height" />
+
+    <TextView
+        android:id="@+id/txtDisplayAge"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorTextAge"
+        android:textSize="@dimen/text_view_text_size"
+        android:layout_width="@dimen/text_view_display_age_width"
+        android:layout_height="@dimen/text_view_display_age_height" />
+    <TextView
+        android:id="@+id/txtDisplayBirthday"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/text_view_text_size"
+        android:textColor="@color/colorTextBirthday"
+        android:layout_width="@dimen/text_view_display_birthday_width"
+        android:layout_height="@dimen/text_view_display_birthday_height" />
+</LinearLayout>

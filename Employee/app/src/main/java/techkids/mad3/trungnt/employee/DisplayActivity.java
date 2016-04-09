@@ -1,5 +1,6 @@
 package techkids.mad3.trungnt.employee;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,14 +19,20 @@ import java.util.Vector;
 public class DisplayActivity extends AppCompatActivity {
     private ListView listViewEmployee;
     private Button btnBack;
-    private ArrayList<String> arrayListEmployee;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_employee);
-        loadListEmployee();
+    }
 
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        //load data nen de trong phuong thuc onResume
+        loadListEmployee();
     }
 
     private void loadListEmployee()
@@ -41,14 +48,9 @@ public class DisplayActivity extends AppCompatActivity {
             }
         });
 
-        Vector<Employee> vecListEmp = EmployeeManager.getInstance().getArrEmployee();
-        arrayListEmployee = new ArrayList<String>();
 
-        for (Employee employee : vecListEmp)
-             arrayListEmployee.add(employee.getName() + "\n" + employee.getAge() + "\n" + employee.getBirthday());
-
+        CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().getArrEmployee());
         listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayListEmployee);
         listViewEmployee.setAdapter(adapter);
     }
 }

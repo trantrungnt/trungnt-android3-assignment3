@@ -6,4 +6,6 @@
     <color name="colorBlue">#4040ff</color>
     <color name="drk_button">#FFEBEE</color>
     <color name="lgt_button">#FFEBEE</color>
+    <color name="colorTextAge">#76FF03</color>
+    <color name="colorTextBirthday">#D50000</color>
 </resources>

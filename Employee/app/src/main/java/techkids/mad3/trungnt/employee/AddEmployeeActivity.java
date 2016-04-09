@@ -91,8 +91,7 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
             {
                 //luu du lieu hoac hien thi du lieu ....
                 employee = new Employee(name, age, birthday);
-                //String emp = employee.getName() + "\n" + employee.getAge() + "\n" + employee.getBirthday();
-                EmployeeManager.getInstance().getArrEmployee().addElement(employee);
+                EmployeeManager.getInstance().getArrEmployee().add(employee);
 
                 Intent intent = new Intent(AddEmployeeActivity.this, DisplayActivity.class);
                 startActivity(intent);
