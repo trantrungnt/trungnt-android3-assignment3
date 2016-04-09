@@ -50,6 +50,5 @@ public class DisplayActivity extends AppCompatActivity {
         listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayListEmployee);
         listViewEmployee.setAdapter(adapter);
-
     }
 }

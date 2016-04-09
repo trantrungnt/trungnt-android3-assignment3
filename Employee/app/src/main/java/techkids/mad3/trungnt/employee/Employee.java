@@ -1,11 +1,9 @@
 package techkids.mad3.trungnt.employee;
 
-import java.io.Serializable;
-
 /**
  * Created by TrungNT on 4/8/2016.
  */
-public class Employee implements Serializable {
+public class Employee  {
     private String name;
     private String age;
     private String birthday;

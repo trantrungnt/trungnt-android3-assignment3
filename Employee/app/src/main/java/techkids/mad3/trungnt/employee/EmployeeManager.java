@@ -1,6 +1,5 @@
 package techkids.mad3.trungnt.employee;
 
-import java.util.ArrayList;
 import java.util.Vector;
 
 /**
@@ -22,6 +21,4 @@ public class EmployeeManager {
     public static EmployeeManager getInstance() {
         return ourInstance;
     }
-
-
 }
