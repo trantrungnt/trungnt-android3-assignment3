@@ -85,3 +85,7 @@ private void loadListEmployee()
 
 ##Demo bài tập
 + [Video demo bài tập Assigment số 3 xem tại đây](https://youtu.be/wch_cK3ha2U)
+
+##Tham khảo
++ [Tham khảo cách làm tròn 4 góc của nút Button](http://belencruz.com/2012/12/rounded-button-with-shadow-in-android/)
+
