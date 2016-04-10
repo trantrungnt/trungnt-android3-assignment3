@@ -38,4 +38,5 @@
     <dimen name="list_view_employee_height">450dp</dimen>
     <dimen name="text_view_text_size">16dp</dimen>
     <dimen name="text_view_margin_left">40dp</dimen>
+    <dimen name="text_view_marginTop">20dp</dimen>
 </resources>
