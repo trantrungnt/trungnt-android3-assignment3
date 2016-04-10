@@ -73,7 +73,40 @@ private void loadListEmployee()
     }
 ```
 
-+ Thuộc tính android:keepScreenOn="true" sẽ giữ cho nút Button không bị Scrolll
++ Chuyển EmployeeManager thành Singleton kế thừa từ class Application. Trong file Manifext.xml, ta chỉ rõ name Application là EmployeeManager
+```
+<application
+        android:name=".EmployeeManager"
+       ...
+>
+...
+</application>
+
+```
+
++ Định nghĩa Singleton: EmployeeManaager và kế thừa Application class. Bản thân Application class của Android đã là 1 singleton. Do thực thể Singleton này ở mức Application nên nếu các activity mà bị chết Singleton này vẫn tồn tại. Trong  Hệ điều hành Android, nó sẽ làm việc với mức Application trước, sau đó activity nào đặt là Main thì nó mới load đến Activity đó.Ở đây, EmployeeManager có nhiệm vụ lưu trữ mảng ArrayList có kiểu dữ liệu là Employee (mỗi lần nhập từ Form Add Employee thì mảng này có nhiệm vụ giữ giá trị thuộc tính của Employee vừa nhập)
+```
+public class EmployeeManager extends Application { //Application class ban than no da la 1 singletonbien static
+    private static EmployeeManager ourInstance = new EmployeeManager();
+    private ArrayList<Employee> arrListEmployee = new ArrayList<>();
+
+    public ArrayList<Employee> getArrEmployee() {
+        return arrListEmployee;
+    }
+
+    public static EmployeeManager getInstance() {
+        return ourInstance;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        ourInstance = this;
+    }
+}
+```
+
++ Thuộc tính android:keepScreenOn="true" sẽ giữ cho nút Button không bị Scroll
 ```
     android:keepScreenOn="true"
 ```
