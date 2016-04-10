@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listViewListEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_view_employee_height">
+        </ListView>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_below="@id/listViewListEmployee"
+            android:keepScreenOn="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_shape"
+            android:text="@string/label_button_back"
+            android:layout_width="@dimen/button_layout_width"
+            android:layout_height="@dimen/button_layout_height" />
+    </RelativeLayout>
+</ScrollView>
