@@ -179,4 +179,5 @@ CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().ge
 + [Android: Make use of Android Application Class as Singleton Object](https://tausiq.wordpress.com/2013/01/27/android-make-use-of-android-application-class-as-singleton-object/)
 + [Using lists in Android (ListView) - Tutorial](http://www.vogella.com/tutorials/AndroidListView/article.html)
 + [Using an ArrayAdapter with ListView](https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView)
++ [Tham khảo Relative Layout](http://code5s.com/di-dong/android/relative-layout.html)
 
