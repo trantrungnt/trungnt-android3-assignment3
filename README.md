@@ -147,6 +147,18 @@ CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().ge
     android:keepScreenOn="true"
 ```
 
++ Lúc load dữ liệu, xử lý dữ liệu nặng thì phải để trong hàm onResume(), hàm này được load khi User tương tác Activity. Hàm start nên để xử lý các dạng nhẹ nhất có thể
+```
+@Override
+    protected void onResume()
+    {
+        super.onResume();
+        //load data nen de trong phuong thuc onResume
+        loadListEmployee();
+    }
+```
+
+
 ##Môi trường phát triển
 + Bộ công cụ Android Studio 
 + App phát triển với api18 và trên hệ điều hành Android version 4.3
