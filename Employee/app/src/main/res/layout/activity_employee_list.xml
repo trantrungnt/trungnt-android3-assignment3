@@ -6,6 +6,7 @@
     <TextView
         android:id="@+id/txtDisplayName"
         android:textAlignment="textStart"
+        android:textStyle="bold"
         android:layout_marginLeft="@dimen/text_view_margin_left"
         android:textSize="@dimen/text_view_text_size"
         android:layout_width="@dimen/text_view_display_name_width"
