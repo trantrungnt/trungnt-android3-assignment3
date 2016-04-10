@@ -3,6 +3,8 @@
 + Tạo giao diện Add Employee gồm các field: Tên, Tuổi và Ngày Tháng Năm sinh
 + Tạo giao diện Hiển thị tối đa 10 người Employee (fixed cứng hiển thị 10 người và có sử dụng Scroll View trong giao diện Hiển thị)
 + Trong giao diện Hiển thị Danh sách Employee, vùng chứa nút Add Button không bị Scroll (nút này luôn được giữ nguyên khi ta vuốt màn hình và xem danh sách Employee)
++ Trong từng Item của ListView, Name để chữ đậm màu đen căn trái, Age để chữ xanh là cây căn phải, Birthday để chữ đỏ căn phải
++ Các nút Button để tròn 4 góc
 
 ![Ảnh BTVN Asssigment 3](http://i477.photobucket.com/albums/rr132/trungepu/12974365_1017213228354117_7997807231138500768_n_zpsjaq0k9hr.jpg)
 
