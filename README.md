@@ -170,6 +170,7 @@ CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().ge
 
 ##Demo bài tập
 + [Video demo bài tập Assigment số 3 xem tại đây](https://youtu.be/wch_cK3ha2U)
++ [Video demo sử dụng Relative khi sử thiết kế Layout cho giao diện Add Employee và DisplayEmployee](https://youtu.be/lyoeIsFwW5o)
 
 ##Tham khảo
 + [Tham khảo cách làm tròn 4 góc của nút Button](http://belencruz.com/2012/12/rounded-button-with-shadow-in-android/)

@@ -36,7 +36,7 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_employee);
+        setContentView(R.layout.activity_add_employee_relativelayout);
         initView();
     }
 
