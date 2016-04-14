@@ -10,6 +10,9 @@
 
 ![Ảnh BTVN Asssigment 3](http://i477.photobucket.com/albums/rr132/trungepu/12974365_1017213228354117_7997807231138500768_n_zpsjaq0k9hr.jpg)
 
++ Cải tiến bài Employee hiển thị như hình dưới
+![Ảnh BTVN Assigment 3 - cải tiến 1](http://i477.photobucket.com/albums/rr132/trungepu/12963559_1021955897879850_8709784403973420724_n_zpsneaf0tfd.jpg)
+
 ##Chú ý khi code
 + Có nhiều cách chuyển data từ Anctivity này sang Activity khác (dùng bundle kết hợp Intent hoặc Dùng Singleton). Ở đây, mình dùng Singleton: 1 thực thể EmployeeManager để dùng mảng Vector lưu trữ các Employe khi được add vào vector có kiểu dữ  liệu là Employee (định nghĩa Singleton này và đính kèm singleton này vào application hiện tại của ta)
 ```
