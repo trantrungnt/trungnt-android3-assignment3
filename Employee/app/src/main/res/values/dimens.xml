@@ -60,4 +60,13 @@
     <dimen name="text_view_display_job_new_width">180dp</dimen>
     <dimen name="text_view_display_job_new_height">30dp</dimen>
     <dimen name="text_view_job_new_marginTop">5dp</dimen>
+    <dimen name="image_view_employee_detail_marginTop">15dp</dimen>
+    <dimen name="txtDetailName_width">70dp</dimen>
+    <dimen name="txtDetailName_height">30dp</dimen>
+    <dimen name="txtDetailNameNew_marginTop">30dp</dimen>
+    <dimen name="txtDisplayDetailNameNew_width">250dp</dimen>
+    <dimen name="txtDisplayDetailNameNew_height">30dp</dimen>
+    <dimen name="text_size_detail">20sp</dimen>
+    <dimen name="txtDetailName_marginTop">30dp</dimen>
+    <dimen name="txtDetailName_marginLeft">30dp</dimen>
 </resources>

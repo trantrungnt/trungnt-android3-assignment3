@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgEmployeeDetail"
+        android:src="@drawable/trungnt0"
+        android:layout_marginTop="@dimen/image_view_employee_detail_marginTop"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/image_view_employee_width"
+        android:layout_height="@dimen/image_view_employee_height" />
+
+    <TextView
+        android:id="@+id/txtDetailName"
+        android:text="@string/label_name"
+        android:layout_marginTop="@dimen/txtDetailName_marginTop"
+        android:layout_marginLeft="@dimen/txtDetailName_marginLeft"
+        android:textSize="@dimen/text_size_detail"
+        android:textColor="@color/colorBlue"
+        android:layout_below="@id/imgEmployeeDetail"
+        android:layout_width="@dimen/txtDetailName_width"
+        android:layout_height="@dimen/txtDetailName_height" />
+
+    <TextView
+        android:id="@+id/txtDisplayDetailNameNew"
+        android:layout_marginTop="@dimen/txtDetailNameNew_marginTop"
+        android:layout_toRightOf="@id/txtDetailName"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/text_size_detail"
+        android:layout_below="@id/imgEmployeeDetail"
+        android:layout_width="@dimen/txtDisplayDetailNameNew_width"
+        android:layout_height="@dimen/txtDisplayDetailNameNew_height" />
+
+
+
+</RelativeLayout>
