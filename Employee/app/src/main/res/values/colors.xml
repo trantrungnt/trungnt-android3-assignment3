@@ -8,4 +8,6 @@
     <color name="lgt_button">#FFEBEE</color>
     <color name="colorTextAge">#76FF03</color>
     <color name="colorTextBirthday">#D50000</color>
+    <color name="colorBackground">#FF9800</color>
+    <color name="colorText">#76FF03</color>
 </resources>
