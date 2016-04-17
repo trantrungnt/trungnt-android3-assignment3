@@ -43,5 +43,12 @@
             android:layout_below="@id/txtDisplayNameNew"
             android:layout_width="@dimen/text_view_display_age_new_width"
             android:layout_height="@dimen/text_view_display_age_new_height" />
+
+        <TextView
+            android:id="@+id/txtDisplayJobNew"
+            android:layout_below="@id/txtDisplayAgeNew"
+            android:layout_marginTop="@dimen/text_view_job_new_marginTop"
+            android:layout_width="@dimen/text_view_display_job_new_width"
+            android:layout_height="@dimen/text_view_display_job_new_height" />
     </RelativeLayout>
 </LinearLayout>
