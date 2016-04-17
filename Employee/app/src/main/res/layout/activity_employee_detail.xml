@@ -91,4 +91,17 @@
         android:layout_width="@dimen/txtDisplayDetailAddress_width"
         android:layout_height="@dimen/txtDisplayDetailAddress_height" />
 
+    <TextView
+        android:id="@+id/txtDetailJob"
+        android:text="@string/label_job"
+        android:textSize="@dimen/text_size_detail"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="@dimen/txtDetailJob_marginTop"
+        android:layout_marginLeft="@dimen/txtDetailJob_marginLeft"
+        android:layout_below="@id/txtDetailAddress"
+        android:layout_width="@dimen/txtDetailJob_width"
+        android:layout_height="@dimen/txtDetailJob_height" />
+
+
+
 </RelativeLayout>

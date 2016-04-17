@@ -9,4 +9,5 @@
     <string name="label_button_back">Back</string>
     <string name="label_button_detail">Detail</string>
     <string name="label_address">Address:</string>
+    <string name="label_job">Job:</string>
 </resources>
