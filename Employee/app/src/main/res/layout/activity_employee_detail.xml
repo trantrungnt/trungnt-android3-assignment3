@@ -47,9 +47,29 @@
     <TextView
         android:id="@+id/txtDisplayDetailAge"
         android:layout_below="@id/txtDetailName"
+        android:textColor="@color/colorBlue"
         android:layout_marginTop="@dimen/text_view_age_marginTop"
         android:layout_toRightOf="@id/txtDetailAge"
         android:layout_width="@dimen/txtDisplayDetailAge_width"
         android:layout_height="@dimen/txtDisplayDetailAge_height" />
+
+    <TextView
+        android:id="@+id/txtDetailBirthday"
+        android:layout_below="@id/txtDetailAge"
+        android:layout_marginLeft="@dimen/txtDetailBirthday_marginLeft"
+        android:text="@string/label_birthday"
+        android:textSize="@dimen/text_size_detail"
+        android:textColor="@color/colorBlue"
+        android:layout_width="@dimen/txtDetailBirthday_width"
+        android:layout_height="@dimen/txtDetailBirthday_height" />
+
+    <TextView
+        android:id="@+id/txtDisplayDetailBirthday"
+        android:layout_below="@id/txtDetailAge"
+        android:layout_toRightOf="@id/txtDetailBirthday"
+        android:textSize="@dimen/text_size_detail"
+        android:textColor="@color/colorBlue"
+        android:layout_width="@dimen/txtDisplayDetailBirthday_width"
+        android:layout_height="@dimen/txtDisplayDetailBirthday_height" />
 
 </RelativeLayout>

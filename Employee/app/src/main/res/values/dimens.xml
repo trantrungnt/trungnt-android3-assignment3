@@ -75,4 +75,9 @@
     <dimen name="txtDisplayDetailAge_width">250dp</dimen>
     <dimen name="txtDisplayDetailAge_height">30dp</dimen>
     <dimen name="text_view_age_marginTop">5dp</dimen>
+    <dimen name="txtDetailBirthday_width">90dp</dimen>
+    <dimen name="txtDetailBirthday_height">30dp</dimen>
+    <dimen name="txtDetailBirthday_marginLeft">30dp</dimen>
+    <dimen name="txtDisplayDetailBirthday_width">250dp</dimen>
+    <dimen name="txtDisplayDetailBirthday_height">30dp</dimen>
 </resources>
