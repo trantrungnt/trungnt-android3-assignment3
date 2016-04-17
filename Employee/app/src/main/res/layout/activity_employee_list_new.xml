@@ -10,6 +10,7 @@
         android:layout_height="@dimen/image_view_employee_height" />
 
     <RelativeLayout
+        android:layout_marginLeft="@dimen/relative_layout_marginLeft"
         android:layout_width="match_parent"
         android:layout_height="@dimen/relative_layout_height">
 
