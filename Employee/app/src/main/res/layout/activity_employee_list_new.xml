@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/linear_layout_horizontal_employee_list_height">
 
     <ImageView
         android:id="@+id/imgEmployee"
@@ -20,5 +21,12 @@
             android:layout_alignParentRight="true"
             android:layout_width="@dimen/button_detail_width"
             android:layout_height="@dimen/button_detaiil_height" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:background="@drawable/close"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/button_close_width"
+            android:layout_height="@dimen/button_cloase_height" />
     </RelativeLayout>
 </LinearLayout>
