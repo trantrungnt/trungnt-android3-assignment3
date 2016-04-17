@@ -38,7 +38,7 @@ public class CustomAdapter extends ArrayAdapter<Employee> {
         tvName.setText(employee.getName());
         tvAge.setText(employee.getAge());
         tvJob.setText(employee.getJob());
-        //avatar.setImageResource(R.drawable.trungnt0);
+        avatar.setImageResource(R.drawable.trungnt0);
         // Return the completed view to render on screen
         return convertView;
     }
