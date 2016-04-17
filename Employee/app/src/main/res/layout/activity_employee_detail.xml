@@ -37,10 +37,19 @@
         android:id="@+id/txtDetailAge"
         android:layout_marginLeft="@dimen/txtDetailAge_marginLeft"
         android:layout_below="@id/txtDetailName"
+        android:layout_marginTop="@dimen/text_view_age_marginTop"
         android:text="@string/label_age"
         android:textSize="@dimen/text_size_detail"
         android:textColor="@color/colorBlue"
         android:layout_width="@dimen/txtDetailAge_width"
         android:layout_height="@dimen/txtDetailAge_height" />
+
+    <TextView
+        android:id="@+id/txtDisplayDetailAge"
+        android:layout_below="@id/txtDetailName"
+        android:layout_marginTop="@dimen/text_view_age_marginTop"
+        android:layout_toRightOf="@id/txtDetailAge"
+        android:layout_width="@dimen/txtDisplayDetailAge_width"
+        android:layout_height="@dimen/txtDisplayDetailAge_height" />
 
 </RelativeLayout>

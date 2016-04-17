@@ -72,4 +72,7 @@
     <dimen name="txtDetailAge_marginLeft">30dp</dimen>
     <dimen name="txtDetailAge_width">50dp</dimen>
     <dimen name="txtDetailAge_height">30dp</dimen>
+    <dimen name="txtDisplayDetailAge_width">250dp</dimen>
+    <dimen name="txtDisplayDetailAge_height">30dp</dimen>
+    <dimen name="text_view_age_marginTop">5dp</dimen>
 </resources>
