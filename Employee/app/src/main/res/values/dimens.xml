@@ -53,4 +53,8 @@
     <dimen name="text_view_display_name_new_height">30dp</dimen>
     <dimen name="button_close_margintTop">5dp</dimen>
     <dimen name="button_close_marginRight">5dp</dimen>
+    <dimen name="text_view_display_name_new_marginTop">10dp</dimen>
+    <dimen name="text_view_display_age_new_width">180dp</dimen>
+    <dimen name="text_view_display_age_new_height">30dp</dimen>
+    <dimen name="text_view_display_age_new_margintTop">10dp</dimen>
 </resources>
