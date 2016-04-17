@@ -120,6 +120,7 @@
         android:layout_below="@id/txtDetailJob"
         android:layout_marginTop="@dimen/btnDetailBack_marginTop"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
         android:layout_width="@dimen/btnDetailBack_width"
         android:layout_height="@dimen/btnDetailBack_height" />
 
