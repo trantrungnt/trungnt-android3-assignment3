@@ -95,4 +95,7 @@
     <dimen name="txtDisplayJob_height">30dp</dimen>
     <dimen name="txtDisplayDetailJob_marginTop">5dp</dimen>
     <dimen name="txtDetailBirthday_marginTop">5dp</dimen>
+    <dimen name="btnDetailBack_width">100dp</dimen>
+    <dimen name="btnDetailBack_height">50dp</dimen>
+    <dimen name="btnDetailBack_marginTop">30dp</dimen>
 </resources>

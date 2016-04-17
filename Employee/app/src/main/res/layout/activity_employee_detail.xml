@@ -108,8 +108,19 @@
         android:id="@+id/txtDisplayDetailJob"
         android:layout_marginTop="@dimen/txtDisplayDetailJob_marginTop"
         android:layout_below="@id/txtDetailAddress"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/text_size_detail"
         android:layout_toRightOf="@id/txtDetailAddress"
         android:layout_width="@dimen/txtDisplayDetailJob_width"
         android:layout_height="@dimen/txtDisplayJob_height" />
+
+    <Button
+        android:id="@+id/btnDetailBack"
+        android:text="@string/label_button_back"
+        android:layout_below="@id/txtDetailJob"
+        android:layout_marginTop="@dimen/btnDetailBack_marginTop"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/btnDetailBack_width"
+        android:layout_height="@dimen/btnDetailBack_height" />
 
 </RelativeLayout>
