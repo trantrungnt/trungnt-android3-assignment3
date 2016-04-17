@@ -10,7 +10,12 @@
 
 ![Ảnh BTVN Asssigment 3](http://i477.photobucket.com/albums/rr132/trungepu/12974365_1017213228354117_7997807231138500768_n_zpsjaq0k9hr.jpg)
 
-+ Cải tiến bài Employee hiển thị như hình dưới
+## Yêu cầu cải tiến bài Employee hiển thị như hình dưới:
++ Thêm thông tin Address, Job, Ảnh của Employee
++ Có nút X để Xóa được Item của ListView Employee
++  Có nút Detail để khi nhấn vào nút này, User có thể xem được thông tin chi tiết của Employee được chọn
++ Khi nhấn nút Detail thì hiển thi ra Dialog hiển thị chi tiết thông tin của Employee được chọn
+
 ![Ảnh BTVN Assigment 3 - cải tiến 1](http://i477.photobucket.com/albums/rr132/trungepu/12963559_1021955897879850_8709784403973420724_n_zpsneaf0tfd.jpg)
 
 ##Chú ý khi code
