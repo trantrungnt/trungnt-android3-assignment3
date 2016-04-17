@@ -102,6 +102,12 @@
         android:layout_width="@dimen/txtDetailJob_width"
         android:layout_height="@dimen/txtDetailJob_height" />
 
-
+    <TextView
+        android:id="@+id/txtDisplayDetailJob"
+        android:layout_marginTop="@dimen/txtDisplayDetailJob_marginTop"
+        android:layout_below="@id/txtDetailAddress"
+        android:layout_toRightOf="@id/txtDetailAddress"
+        android:layout_width="@dimen/txtDisplayDetailJob_width"
+        android:layout_height="@dimen/txtDisplayJob_height" />
 
 </RelativeLayout>

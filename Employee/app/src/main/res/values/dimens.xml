@@ -87,8 +87,11 @@
     <dimen name="txtDisplayDetailAddress_width">250dp</dimen>
     <dimen name="txtDisplayDetailAddress_height">30dp</dimen>
     <dimen name="txtDisplayDetailAddress_marginTop">5dp</dimen>
-    <dimen name="txtDetailJob_width">50dp</dimen>
+    <dimen name="txtDetailJob_width">40dp</dimen>
     <dimen name="txtDetailJob_height">30dp</dimen>
     <dimen name="txtDetailJob_marginLeft">30dp</dimen>
     <dimen name="txtDetailJob_marginTop">5dp</dimen>
+    <dimen name="txtDisplayDetailJob_width">250dp</dimen>
+    <dimen name="txtDisplayJob_height">30dp</dimen>
+    <dimen name="txtDisplayDetailJob_marginTop">5dp</dimen>
 </resources>
