@@ -98,4 +98,6 @@
     <dimen name="btnDetailBack_width">100dp</dimen>
     <dimen name="btnDetailBack_height">50dp</dimen>
     <dimen name="btnDetailBack_marginTop">30dp</dimen>
+    <dimen name="tvAddress_width">60dp</dimen>
+    <dimen name="tvAddress_height">30dp</dimen>
 </resources>

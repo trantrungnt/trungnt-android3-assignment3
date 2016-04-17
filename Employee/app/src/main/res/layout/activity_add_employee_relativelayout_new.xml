@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_marginTop="@dimen/text_view_marginTop"
+        android:layout_width="@dimen/text_view_name_width"
+        android:layout_height="@dimen/text_view_name_height"
+        android:text="@string/label_name" />
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_toRightOf="@+id/tvName"
+        android:layout_width="@dimen/edit_text_name_width"
+        android:layout_height="@dimen/edit_text_name_height" />
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="@dimen/text_view_marginTop"
+        android:layout_width="@dimen/text_view_age_width"
+        android:layout_height="@dimen/text_view_age_height"
+        android:text="@string/label_age" />
+    <EditText
+        android:id="@+id/editTextAge"
+        android:inputType="number"
+        android:layout_below="@id/editTextName"
+        android:layout_toRightOf="@id/tvAge"
+        android:layout_width="@dimen/edit_text_age_width"
+        android:layout_height="@dimen/edit_text_age_height" />
+
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_below="@id/tvAge"
+        android:layout_marginTop="@dimen/text_view_marginTop"
+        android:layout_width="@dimen/text_view_birthday_width"
+        android:layout_height="@dimen/text_view_birthday_height"
+        android:text="@string/label_birthday" />
+    <EditText
+        android:id="@+id/editTextBirthday"
+        android:layout_below="@id/editTextAge"
+        android:layout_toRightOf="@id/tvBirthday"
+        android:layout_width="@dimen/edit_text_birthday_width"
+        android:layout_height="@dimen/edit_text_birthday_height" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:text="@string/label_address"
+        android:layout_below="@id/tvBirthday"
+        android:layout_marginTop="@dimen/text_view_marginTop"
+        android:layout_width="@dimen/tvAddress_width"
+        android:layout_height="@dimen/tvAddress_height" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_below="@id/tvBirthday"
+        android:layout_toRightOf="@id/tvBirthday"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="@string/label_button_add"
+        android:layout_below="@id/tvBirthday"
+        android:layout_marginTop="@dimen/button_add_margin_top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:layout_width="@dimen/button_add_width"
+        android:layout_height="@dimen/button_add_height" />
+</RelativeLayout>
