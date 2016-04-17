@@ -80,4 +80,11 @@
     <dimen name="txtDetailBirthday_marginLeft">30dp</dimen>
     <dimen name="txtDisplayDetailBirthday_width">250dp</dimen>
     <dimen name="txtDisplayDetailBirthday_height">30dp</dimen>
+    <dimen name="txtDetailAddress_width">90dp</dimen>
+    <dimen name="txtDetailAddress_height">30dp</dimen>
+    <dimen name="txtDetaiAdrees_marginTop">5dp</dimen>
+    <dimen name="txtDetailAddress_marginLeft">30dp</dimen>
+    <dimen name="txtDisplayDetailAddress_width">250dp</dimen>
+    <dimen name="txtDisplayDetailAddress_height">30dp</dimen>
+    <dimen name="txtDisplayDetailAddress_marginTop">5dp</dimen>
 </resources>

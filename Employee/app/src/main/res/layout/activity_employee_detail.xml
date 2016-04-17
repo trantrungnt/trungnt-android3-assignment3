@@ -72,4 +72,23 @@
         android:layout_width="@dimen/txtDisplayDetailBirthday_width"
         android:layout_height="@dimen/txtDisplayDetailBirthday_height" />
 
+    <TextView
+        android:id="@+id/txtDetailAddress"
+        android:layout_below="@id/txtDetailBirthday"
+        android:layout_marginTop="@dimen/txtDetaiAdrees_marginTop"
+        android:layout_marginLeft="@dimen/txtDetailAddress_marginLeft"
+        android:text="@string/label_address"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/text_size_detail"
+        android:layout_width="@dimen/txtDetailAddress_width"
+        android:layout_height="@dimen/txtDetailAddress_height" />
+
+    <TextView
+        android:id="@+id/txtDisplayDetailAddress"
+        android:layout_below="@id/txtDetailBirthday"
+        android:layout_toRightOf="@id/txtDetailAddress"
+        android:layout_marginTop="@dimen/txtDisplayDetailAddress_marginTop"
+        android:layout_width="@dimen/txtDisplayDetailAddress_width"
+        android:layout_height="@dimen/txtDisplayDetailAddress_height" />
+
 </RelativeLayout>
