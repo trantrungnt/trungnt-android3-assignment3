@@ -59,13 +59,28 @@
         android:id="@+id/editTextAddress"
         android:layout_below="@id/tvBirthday"
         android:layout_toRightOf="@id/tvBirthday"
-        android:layout_width="300dp"
-        android:layout_height="50dp" />
+        android:layout_width="@dimen/editTextAddress_width"
+        android:layout_height="@dimen/editTextAddress_height" />
+
+    <TextView
+        android:id="@+id/tvJob"
+        android:text="@string/label_job"
+        android:layout_below="@id/tvAddress"
+        android:layout_marginTop="@dimen/text_view_marginTop"
+        android:layout_width="@dimen/tvJob_width"
+        android:layout_height="@dimen/tvJob_height" />
+
+    <EditText
+        android:id="@+id/editTextJob"
+        android:layout_below="@id/tvAddress"
+        android:layout_toRightOf="@id/tvJob"
+        android:layout_width="@dimen/editTextJob_width"
+        android:layout_height="@dimen/editTextJob_height" />
 
     <Button
         android:id="@+id/btnAdd"
         android:text="@string/label_button_add"
-        android:layout_below="@id/tvBirthday"
+        android:layout_below="@id/tvJob"
         android:layout_marginTop="@dimen/button_add_margin_top"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"

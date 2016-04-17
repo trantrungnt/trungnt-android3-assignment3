@@ -100,4 +100,10 @@
     <dimen name="btnDetailBack_marginTop">30dp</dimen>
     <dimen name="tvAddress_width">60dp</dimen>
     <dimen name="tvAddress_height">30dp</dimen>
+    <dimen name="editTextAddress_width">300dp</dimen>
+    <dimen name="editTextAddress_height">50dp</dimen>
+    <dimen name="tvJob_width">50dp</dimen>
+    <dimen name="tvJob_height">30dp</dimen>
+    <dimen name="editTextJob_width">300dp</dimen>
+    <dimen name="editTextJob_height">50dp</dimen>
 </resources>
