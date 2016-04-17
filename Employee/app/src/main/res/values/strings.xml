@@ -7,4 +7,5 @@
     <string name="label_button_add">ADD</string>
     <string name="activity_display_employee_name">List Employee</string>
     <string name="label_button_back">Back</string>
+    <string name="label_button_detail">Detail</string>
 </resources>

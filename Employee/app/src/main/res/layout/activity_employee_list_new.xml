@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgEmployee"
+        android:layout_width="@dimen/image_view_employee_width"
+        android:layout_height="@dimen/image_view_employee_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_layout_height">
+
+        <Button
+            android:id="@+id/btnDetail"
+            android:text="@string/label_button_detail"
+            android:layout_marginRight="@dimen/button_detail_marginRight"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/button_detail_width"
+            android:layout_height="@dimen/button_detaiil_height" />
+    </RelativeLayout>
+</LinearLayout>
