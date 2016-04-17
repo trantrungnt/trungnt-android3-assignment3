@@ -94,4 +94,5 @@
     <dimen name="txtDisplayDetailJob_width">250dp</dimen>
     <dimen name="txtDisplayJob_height">30dp</dimen>
     <dimen name="txtDisplayDetailJob_marginTop">5dp</dimen>
+    <dimen name="txtDetailBirthday_marginTop">5dp</dimen>
 </resources>
