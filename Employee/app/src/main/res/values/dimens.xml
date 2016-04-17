@@ -49,4 +49,8 @@
     <dimen name="linear_layout_horizontal_employee_list_height">150dp</dimen>
     <dimen name="button_close_width">30dp</dimen>
     <dimen name="button_cloase_height">30dp</dimen>
+    <dimen name="text_view_display_name_new_width">180dp</dimen>
+    <dimen name="text_view_display_name_new_height">30dp</dimen>
+    <dimen name="button_close_margintTop">5dp</dimen>
+    <dimen name="button_close_marginRight">5dp</dimen>
 </resources>

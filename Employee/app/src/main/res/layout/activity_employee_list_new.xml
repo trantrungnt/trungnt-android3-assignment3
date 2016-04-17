@@ -24,9 +24,16 @@
 
         <Button
             android:id="@+id/btnClose"
+            android:layout_marginTop="@dimen/button_close_margintTop"
+            android:layout_marginRight="@dimen/button_close_marginRight"
             android:background="@drawable/close"
             android:layout_alignParentRight="true"
             android:layout_width="@dimen/button_close_width"
             android:layout_height="@dimen/button_cloase_height" />
+
+        <TextView
+            android:id="@+id/txtDisplayNameNew"
+            android:layout_width="@dimen/text_view_display_name_new_width"
+            android:layout_height="@dimen/text_view_display_name_new_height" />
     </RelativeLayout>
 </LinearLayout>
