@@ -24,7 +24,7 @@ public class DisplayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_employee_relativelayout);
+        setContentView(R.layout.activity_display_employee);
     }
 
     @Override
@@ -52,5 +52,6 @@ public class DisplayActivity extends AppCompatActivity {
         CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().getArrEmployee());
         listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
         listViewEmployee.setAdapter(adapter);
+
     }
 }

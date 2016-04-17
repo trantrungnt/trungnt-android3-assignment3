@@ -24,7 +24,7 @@ import java.util.Locale;
 import java.util.Vector;
 
 public class AddEmployeeActivity extends AppCompatActivity implements View.OnClickListener{
-    private EditText editTextName, editTextAge, editTextBirthday;
+    private EditText editTextName, editTextAge, editTextBirthday, editTextAddress, editTextJob;
     private Button btnAdd;
     private DatePickerDialog datePickerDialogBirthday;
     private DateFormat dateFormatter;
@@ -50,10 +50,12 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
 
     private void initView()
     {
-        btnAdd = (Button) this.findViewById(R.id.btnAdd);
+        btnAdd = (Button) this.findViewById(R.id.btnAddNew);
         editTextName = (EditText) this.findViewById(R.id.editTextName);
         editTextAge = (EditText) this.findViewById(R.id.editTextAge);
         editTextBirthday = (EditText) this.findViewById(R.id.editTextBirthday);
+        editTextAddress = (EditText) this.findViewById(R.id.editTextAddress);
+        editTextJob = (EditText) this.findViewById(R.id.editTextJob);
 
         btnAdd.setOnClickListener(this);
         editTextBirthday.setOnClickListener(this);
@@ -67,21 +69,25 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
         if (id == R.id.editTextBirthday)
                                 datePickerDialogBirthday.show();
 
-        String name, age, birthday;
+        String name, age, birthday, address, job;
 
         name = editTextName.getText().toString();
         age = editTextAge.getText().toString();
         birthday = editTextBirthday.getText().toString();
+        address = editTextAddress.getText().toString();
+        job = editTextJob.getText().toString();
 
 
-        if (id == R.id.btnAdd)
+        if (id == R.id.btnAddNew)
         {
             //TextUtils , shared preference, luu vao file, luu vao sqllite, nen dat ten bien chung trong file dimen ///// persistence storage, su khac nhau khi de startACtivity /// flag full screen
             if ((
                  //textUntils se kiem tra gia tri null, gia tri empty, gia tri null
                  TextUtils.isEmpty(name) ||
                  TextUtils.isEmpty(age) ||
-                 TextUtils.isEmpty(birthday)
+                 TextUtils.isEmpty(birthday) ||
+                 TextUtils.isEmpty(address) ||
+                 TextUtils.isEmpty(job)
             ) && (displayAlertDialog().isShowing()==false))
 
             {
@@ -90,7 +96,7 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
             }else
             {
                 //luu du lieu hoac hien thi du lieu ....
-                employee = new Employee(name, age, birthday);
+                employee = new Employee(name, age, birthday, address, job);
                 EmployeeManager.getInstance().getArrEmployee().add(employee);
 
                 Intent intent = new Intent(AddEmployeeActivity.this, DisplayActivity.class);
