@@ -69,4 +69,7 @@
     <dimen name="text_size_detail">20sp</dimen>
     <dimen name="txtDetailName_marginTop">30dp</dimen>
     <dimen name="txtDetailName_marginLeft">30dp</dimen>
+    <dimen name="txtDetailAge_marginLeft">30dp</dimen>
+    <dimen name="txtDetailAge_width">50dp</dimen>
+    <dimen name="txtDetailAge_height">30dp</dimen>
 </resources>

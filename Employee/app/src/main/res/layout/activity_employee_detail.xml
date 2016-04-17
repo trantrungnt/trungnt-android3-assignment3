@@ -33,6 +33,14 @@
         android:layout_width="@dimen/txtDisplayDetailNameNew_width"
         android:layout_height="@dimen/txtDisplayDetailNameNew_height" />
 
-
+    <TextView
+        android:id="@+id/txtDetailAge"
+        android:layout_marginLeft="@dimen/txtDetailAge_marginLeft"
+        android:layout_below="@id/txtDetailName"
+        android:text="@string/label_age"
+        android:textSize="@dimen/text_size_detail"
+        android:textColor="@color/colorBlue"
+        android:layout_width="@dimen/txtDetailAge_width"
+        android:layout_height="@dimen/txtDetailAge_height" />
 
 </RelativeLayout>
