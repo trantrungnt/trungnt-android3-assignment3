@@ -170,6 +170,42 @@ CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().ge
     }
 ```
 
++ Để  Listview nhận được sự kiện click từng Item, ta phải thêm thuộc tính 
+Trong file giao diện thiết kế hiển thị 1 Item activity_employee_list_new.xml, ta thêm thuộc tính android:descendantFocusability="blocksDescendants"
+```
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    ...
+</LinearLayout>
+```
+Trong file giao diện chính chưa ListView (cụ thể là file activity_display_employee.xml), ta thêm các thuộc tính:
+```
+<ListView
+            android:id="@+id/listViewListEmployee"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_view_employee_height">
+        </ListView>
+```
+Sau đó, ta cài đặt trong code Java sự kiện click Item
+```
+        ListEmployeeAdapter listEmployeeAdapter = new ListEmployeeAdapter((Context) this, R.layout.activity_add_employee_relativelayout_new ,         EmployeeManager.getInstance().getArrEmployee());
+        listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
+        listViewEmployee.setAdapter(listEmployeeAdapter);
+
+        listViewEmployee.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.d("ID selected: ", String.valueOf(position));
+            }
+        });
+```
 
 ##Môi trường phát triển
 + Bộ công cụ Android Studio 
