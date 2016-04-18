@@ -8,6 +8,16 @@ public class Employee  {
     private String age;
     private String birthday;
 
+    public int getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(int avatar) {
+        this.avatar = avatar;
+    }
+
+    private int avatar;
+
     public String getAddress() {
         return address;
     }
@@ -45,14 +55,16 @@ public class Employee  {
         this.birthday = "";
         this.address = "";
         this.job = "";
+        this.avatar = 0;
     }
 
-    public Employee(String name, String age, String birthday, String address, String job)
+    public Employee(String name, String age, String birthday, String address, String job, int avatar)
     {
         this.name = name;
         this.age = age;
         this.birthday = birthday;
         this.address = address;
         this.job = job;
+        this.avatar = avatar;
     }
 }

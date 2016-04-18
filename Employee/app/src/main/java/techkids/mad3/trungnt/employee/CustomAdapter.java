@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class CustomAdapter extends ArrayAdapter<Employee> {
     private TextView tvName, tvAge, tvBirthday, tvAddress, tvJob;
     private ImageView avatar;
+    private ArrayList<Employee> employees;
 
     public CustomAdapter(Context context, ArrayList<Employee> employees) {
         super(context, 0, employees);
