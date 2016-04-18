@@ -10,6 +10,9 @@
 
         <ListView
             android:id="@+id/listViewListEmployee"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:clickable="false"
             android:layout_width="match_parent"
             android:layout_height="@dimen/list_view_employee_height">
         </ListView>
