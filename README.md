@@ -195,7 +195,7 @@ Trong file giao diện chính chưa ListView (cụ thể là file activity_displ
 ```
 Sau đó, ta cài đặt trong code Java sự kiện click Item
 ```
-        ListEmployeeAdapter listEmployeeAdapter = new ListEmployeeAdapter((Context) this, R.layout.activity_add_employee_relativelayout_new ,         EmployeeManager.getInstance().getArrEmployee());
+        ListEmployeeAdapter listEmployeeAdapter = new ListEmployeeAdapter((Context) this, R.layout.activity_add_employee_relativelayout_new , EmployeeManager.getInstance().getArrEmployee());
         listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
         listViewEmployee.setAdapter(listEmployeeAdapter);
 
