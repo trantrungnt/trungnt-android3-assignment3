@@ -240,3 +240,4 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
 + [Using an ArrayAdapter with ListView](https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView)
 + [Tham khảo Relative Layout](http://code5s.com/di-dong/android/relative-layout.html)
 + [Make a custom listview row with clickable buttons in it selectable using a custom cursoradapter ](https://syedasaraahmed.wordpress.com/2013/02/08/make-a-custom-listview-row-with-clickable-buttons-in-it-selectable-using-a-custom-cursoradapter/)
++ [Tham khảo Custom Diaglog trong Android](http://androidexample.com/Custom_Dialog_-_Android_Example/index.php?view=article_discription&aid=88&aaid=111)
