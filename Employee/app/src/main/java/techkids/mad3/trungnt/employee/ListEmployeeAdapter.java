@@ -88,7 +88,7 @@ public class ListEmployeeAdapter extends BaseAdapter{
                 avatarDetail.setImageResource(R.drawable.trungnt0);
                 tvDetailName.setText(employee.getName().toString());
                 tvDetailAge.setText(employee.getAge().toString());
-                tvDetailBirthday.setText(employee.getAge().toString());
+                tvDetailBirthday.setText(employee.getBirthday().toString());
                 tvDetailAddress.setText(employee.getAddress().toString());
                 tvDetailJob.setText(employee.getJob().toString());
 

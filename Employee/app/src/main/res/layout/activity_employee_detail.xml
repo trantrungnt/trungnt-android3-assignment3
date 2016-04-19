@@ -48,6 +48,7 @@
         android:layout_below="@id/txtDetailName"
         android:textColor="@color/colorBlue"
         android:layout_marginTop="@dimen/text_view_age_marginTop"
+        android:textSize="@dimen/text_size_detail"
         android:layout_toRightOf="@id/txtDetailAge"
         android:layout_width="@dimen/txtDisplayDetailAge_width"
         android:layout_height="@dimen/txtDisplayDetailAge_height" />
@@ -88,6 +89,8 @@
         android:id="@+id/txtDisplayDetailAddress"
         android:layout_below="@id/txtDetailBirthday"
         android:layout_toRightOf="@id/txtDetailAddress"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/text_size_detail"
         android:layout_marginTop="@dimen/txtDisplayDetailAddress_marginTop"
         android:layout_width="@dimen/txtDisplayDetailAddress_width"
         android:layout_height="@dimen/txtDisplayDetailAddress_height" />
