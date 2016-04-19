@@ -284,3 +284,4 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
 + [Tham khảo Relative Layout](http://code5s.com/di-dong/android/relative-layout.html)
 + [Make a custom listview row with clickable buttons in it selectable using a custom cursoradapter ](https://syedasaraahmed.wordpress.com/2013/02/08/make-a-custom-listview-row-with-clickable-buttons-in-it-selectable-using-a-custom-cursoradapter/)
 + [Tham khảo Custom Diaglog trong Android](http://androidexample.com/Custom_Dialog_-_Android_Example/index.php?view=article_discription&aid=88&aaid=111)
++ [Update Application for on Screen](http://android-developers.blogspot.com/2009/04/updating-applications-for-on-screen.html)
