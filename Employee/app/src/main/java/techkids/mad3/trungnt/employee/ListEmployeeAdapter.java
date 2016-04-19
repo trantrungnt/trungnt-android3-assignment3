@@ -63,6 +63,7 @@ public class ListEmployeeAdapter extends BaseAdapter{
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //xoa du lieu tai vi tri position cua Phan tu trong ListView
                 arrListEmployee.remove(position);
                 //thong bao cho ListView biet du lieu da duoc thay doi
                 notifyDataSetChanged();

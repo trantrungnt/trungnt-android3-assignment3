@@ -149,7 +149,7 @@ public class CustomAdapter extends ArrayAdapter<Employee>{
 
 + Trong DisplayActivity, ta khởi tạo adapter có kiểu dữ liệu CustomAdapter class và lấy dữ liệu từ mảng Employee do Singleton EmployeeManager quản lý. Sau đó, ta gắn adapter này vào ListView có ID là R.id.listViewListEmployee
 ```
-CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().getArrEmployee());
+        CustomAdapter adapter = new CustomAdapter(this, EmployeeManager.getInstance().getArrEmployee());
         listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
         listViewEmployee.setAdapter(adapter);
 ```
@@ -203,6 +203,20 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d("ID selected: ", String.valueOf(position));
+            }
+        });
+```
+
++ Trong ListView ListEmployeeAdapter, ta xóa dữ liệu 
+```
+           btnClose = (Button) convertView.findViewById(R.id.btnClose);
+           btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //xoa du lieu tai vi tri position cua Phan tu trong ListView
+                arrListEmployee.remove(position);
+                //thong bao cho ListView biet du lieu da duoc thay doi
+                notifyDataSetChanged();
             }
         });
 ```
