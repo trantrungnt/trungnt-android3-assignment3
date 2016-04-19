@@ -6,7 +6,6 @@
 
     <ImageView
         android:id="@+id/imgEmployeeDetail"
-        android:src="@drawable/trungnt0"
         android:layout_marginTop="@dimen/image_view_employee_detail_marginTop"
         android:layout_centerHorizontal="true"
         android:layout_width="@dimen/image_view_employee_width"

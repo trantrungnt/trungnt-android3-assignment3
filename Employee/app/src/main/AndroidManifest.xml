@@ -19,10 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".DisplayActivity"
-                  android:label="@string/activity_display_employee_name"
-        >
-
+                  android:label="@string/activity_display_employee_name">
         </activity>
+
+        
     </application>
 
 </manifest>
