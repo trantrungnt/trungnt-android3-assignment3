@@ -191,7 +191,7 @@ Trong file giao diện chính chưa ListView (cụ thể là file activity_displ
             android:clickable="false"
             android:layout_width="match_parent"
             android:layout_height="@dimen/list_view_employee_height">
-        </ListView>
+</ListView>
 ```
 Sau đó, ta cài đặt trong code Java sự kiện click Item
 ```
@@ -220,6 +220,49 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
             }
         });
 ```
+
++ Định nghĩa template cho giao diện của Dialog Detial Dialog trong file activity_employee_detail
++ Trong file ListEmployeeAdapter, ta định nghĩa Dialog Alert Detail Employee và kết nối giao diện cho Dialog này. Dialog Alert Detail Employee hiển thị thông tin chi tiết của 1 Employee mà ta chọn khi nhấn nút Detail trong ListView: ListEmployee
+```
+ btnDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialogDetail = new Dialog(mContext);
+
+                //su dung template activity_employee_detail cho UI cua Dialog Alert
+                dialogDetail.setContentView(R.layout.activity_employee_detail);
+                //tao title cho AlertDialog
+                dialogDetail.setTitle(titleDialogAlertDetail);
+
+                avatarDetail = (ImageView) dialogDetail.findViewById(R.id.imgEmployeeDetail);
+                tvDetailName = (TextView) dialogDetail.findViewById(R.id.txtDisplayDetailNameNew);
+                tvDetailAge = (TextView) dialogDetail.findViewById(R.id.txtDisplayDetailAge);
+                tvDetailBirthday = (TextView) dialogDetail.findViewById(R.id.txtDisplayDetailBirthday);
+                tvDetailAddress = (TextView) dialogDetail.findViewById(R.id.txtDisplayDetailAddress);
+                tvDetailJob = (TextView) dialogDetail.findViewById(R.id.txtDisplayDetailJob);
+                btnDetailBack = (Button) dialogDetail.findViewById(R.id.btnDetailBack);
+
+                //day du lieu vao AlertDialog
+                avatarDetail.setImageResource(R.drawable.trungnt0);
+                tvDetailName.setText(employee.getName().toString());
+                tvDetailAge.setText(employee.getAge().toString());
+                tvDetailBirthday.setText(employee.getBirthday().toString());
+                tvDetailAddress.setText(employee.getAddress().toString());
+                tvDetailJob.setText(employee.getJob().toString());
+
+                //su kien cua nut btnDetailBack trong Dialog Detail
+                btnDetailBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialogDetail.dismiss();
+                    }
+                });
+
+                dialogDetail.show();
+            }
+        });
+```
+
 
 ##Môi trường phát triển
 + Bộ công cụ Android Studio 
