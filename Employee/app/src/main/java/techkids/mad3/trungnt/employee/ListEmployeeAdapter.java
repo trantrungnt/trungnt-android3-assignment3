@@ -92,6 +92,13 @@ public class ListEmployeeAdapter extends BaseAdapter{
                 tvDetailAddress.setText(employee.getAddress().toString());
                 tvDetailJob.setText(employee.getJob().toString());
 
+                //su kien cua nut btnDetailBack trong Dialog Detail
+                btnDetailBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialogDetail.dismiss();
+                    }
+                });
 
                 dialogDetail.show();
             }
