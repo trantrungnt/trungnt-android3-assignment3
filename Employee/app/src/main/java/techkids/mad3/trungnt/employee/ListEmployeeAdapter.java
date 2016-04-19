@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,6 +22,7 @@ public class ListEmployeeAdapter extends BaseAdapter{
     private Context mContext;
     private TextView tvName, tvAge, tvJob;
     private ImageView avatar;
+    private Button btnClose;
 
     public ListEmployeeAdapter(Context mContext, int layoutItemID, ArrayList<Employee> arrListEmployee)
     {
@@ -44,7 +47,7 @@ public class ListEmployeeAdapter extends BaseAdapter{
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         Employee employee = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
@@ -55,6 +58,16 @@ public class ListEmployeeAdapter extends BaseAdapter{
         tvName = (TextView) convertView.findViewById(R.id.txtDisplayNameNew);
         tvAge =(TextView) convertView.findViewById(R.id.txtDisplayAgeNew);
         tvJob = (TextView) convertView.findViewById(R.id.txtDisplayJobNew);
+
+        btnClose = (Button) convertView.findViewById(R.id.btnClose);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                arrListEmployee.remove(position);
+                //thong bao cho ListView biet du lieu da duoc thay doi
+                notifyDataSetChanged();
+            }
+        });
 
         avatar.setImageResource(R.drawable.trungnt0);
         tvName.setText(employee.getName().toString());

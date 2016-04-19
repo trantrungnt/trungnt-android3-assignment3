@@ -21,7 +21,7 @@ import java.util.Vector;
  */
 public class DisplayActivity extends AppCompatActivity {
     private ListView listViewEmployee;
-    private Button btnBack, btnDetail;
+    private Button btnBack, btnDetail, btnClose;
     private Context context;
 
     @Override
@@ -64,6 +64,7 @@ public class DisplayActivity extends AppCompatActivity {
 //        });
 
         btnDetail = (Button) this.findViewById(R.id.btnDetail);
+        btnClose = (Button) this.findViewById(R.id.btnClose);
 
         ListEmployeeAdapter listEmployeeAdapter = new ListEmployeeAdapter((Context) this, R.layout.activity_add_employee_relativelayout_new , EmployeeManager.getInstance().getArrEmployee());
         listViewEmployee = (ListView) this.findViewById(R.id.listViewListEmployee);
@@ -71,7 +72,7 @@ public class DisplayActivity extends AppCompatActivity {
 
         listViewEmployee.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
                 Log.d("ID selected: ", String.valueOf(position));
             }
         });
