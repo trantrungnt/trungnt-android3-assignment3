@@ -323,3 +323,4 @@ Trên giao diện activity_add_employee_relativeout_new, nhớ để EditText Jo
 + [How to adjust layout when soft keyboad appears](http://stackoverflow.com/questions/16411056/how-to-adjust-layout-when-soft-keyboard-appears)
 + [Close Hide the android Soft keyboard](http://www.workingfromhere.com/blog/2011/04/27/close-hide-the-android-soft-keyboard/)
 + [Android Input Method Framework: How to handle keyboard in Android?](https://www.youtube.com/watch?v=At0iJB3Sb24)
++ [Android Quick Tip EditText with done Button that closes the keyboard](http://tonylukasavage.com/blog/2011/06/02/android-quick-tip--edittext-with-done-button-that-closes-the-keyboard/)
