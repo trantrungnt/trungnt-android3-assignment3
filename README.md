@@ -286,3 +286,4 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
 + [Tham khảo Custom Diaglog trong Android](http://androidexample.com/Custom_Dialog_-_Android_Example/index.php?view=article_discription&aid=88&aaid=111)
 + [Update Application for on Screen](http://android-developers.blogspot.com/2009/04/updating-applications-for-on-screen.html)
 + [Android a soft keyboard a turial](http://www.101apps.co.za/index.php/articles/android-s-soft-keyboard-a-tutorial.html)
++ [How to adjust layout when soft keyboad appears](http://stackoverflow.com/questions/16411056/how-to-adjust-layout-when-soft-keyboard-appears)
