@@ -77,7 +77,7 @@
         android:layout_below="@id/tvAddress"
         android:layout_toRightOf="@id/tvJob"
         android:inputType="text"
-        android:hint="Enter your job"
+        android:hint="@string/editTextJob_hint"
         android:layout_width="@dimen/editTextJob_width"
         android:layout_height="@dimen/editTextJob_height" />
 

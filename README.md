@@ -263,6 +263,40 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
         });
 ```
 
++ Custumize bàn phím ảo Soft Keyboard: để ẩn hiện bàn phím phù hợp với bài toán. Ở đây, ta, khi nhập Xong dữ liệu trong nút EditText, ta nhấn nút Done để bàn phím tự ẩn đi và sau đó ta nhấn được nút Add (nếu không xử lý trường hợp này, bàn phím ảo sẽ luôn che nút Add)
+Implement sự kiện TextView.OnEditorActionListener
+```
+public class AddEmployeeActivity extends AppCompatActivity implements View.OnClickListener, TextView.OnEditorActionListener{
+
+}
+```
+Trong phương thức initView, nhớ cho editTextJob lắng nghe sự kiện khi dùng bàn phím ảo
+```
+     editTextJob.setOnEditorActionListener(this);
+```
+Sau khi implement sự kiện xử lý sự kiện với bàn phím ảo, ta có event onEditorAction. Ở đây, ta cài đặt phương thức này: mục đích là: nhấn nút Done trên bàn phím ảo và cho bàn phím ảo đóng
+```
+ @Override
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        if(actionId == EditorInfo.IME_ACTION_DONE) {
+            System.out.println("You click DONE");
+            return true;
+        }
+        return false;
+    }
+```
+Trên giao diện activity_add_employee_relativeout_new, nhớ để EditText Job có thuộc tính inputType="text"
+```
+<EditText
+        android:id="@+id/editTextJob"
+        android:layout_below="@id/tvAddress"
+        android:layout_toRightOf="@id/tvJob"
+        android:inputType="text"
+        android:hint="@string/editTextJob_hint"
+        android:layout_width="@dimen/editTextJob_width"
+        android:layout_height="@dimen/editTextJob_height" />
+
+```
 
 ##Môi trường phát triển
 + Bộ công cụ Android Studio 
