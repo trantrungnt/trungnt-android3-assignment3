@@ -11,4 +11,8 @@
     <string name="label_address">Address:</string>
     <string name="label_job">Job:</string>
     <string name="editTextJob_hint">Enter your job</string>
+    <string name="ediitTextName_hint">Enter your name</string>
+    <string name="editTextAge_hint">Enter your age</string>
+    <string name="editTextBirthday_hint">Click choice your birthday</string>
+    <string name="editTextAddress_hint">Enter your address</string>
 </resources>

@@ -17,6 +17,7 @@
         android:id="@+id/editTextName"
         android:layout_toRightOf="@+id/tvName"
         android:inputType="text"
+        android:hint="@string/ediitTextName_hint"
         android:layout_width="@dimen/edit_text_name_width"
         android:layout_height="@dimen/edit_text_name_height" />
     <TextView
@@ -29,6 +30,7 @@
     <EditText
         android:id="@+id/editTextAge"
         android:inputType="number"
+        android:hint="@string/editTextAge_hint"
         android:layout_below="@id/editTextName"
         android:layout_toRightOf="@id/tvAge"
         android:layout_width="@dimen/edit_text_age_width"
@@ -45,6 +47,7 @@
         android:id="@+id/editTextBirthday"
         android:layout_below="@id/editTextAge"
         android:layout_toRightOf="@id/tvBirthday"
+        android:hint="@string/editTextBirthday_hint"
         android:inputType="date"
         android:layout_width="@dimen/edit_text_birthday_width"
         android:layout_height="@dimen/edit_text_birthday_height" />
@@ -59,6 +62,8 @@
 
     <EditText
         android:id="@+id/editTextAddress"
+        android:inputType="text"
+        android:hint="@string/editTextAddress_hint"
         android:layout_below="@id/tvBirthday"
         android:layout_toRightOf="@id/tvBirthday"
         android:layout_width="@dimen/editTextAddress_width"
