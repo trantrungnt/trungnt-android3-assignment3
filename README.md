@@ -287,3 +287,4 @@ Sau đó, ta cài đặt trong code Java sự kiện click Item
 + [Update Application for on Screen](http://android-developers.blogspot.com/2009/04/updating-applications-for-on-screen.html)
 + [Android a soft keyboard a turial](http://www.101apps.co.za/index.php/articles/android-s-soft-keyboard-a-tutorial.html)
 + [How to adjust layout when soft keyboad appears](http://stackoverflow.com/questions/16411056/how-to-adjust-layout-when-soft-keyboard-appears)
++ [Close Hide the android Soft keyboard](http://www.workingfromhere.com/blog/2011/04/27/close-hide-the-android-soft-keyboard/)
