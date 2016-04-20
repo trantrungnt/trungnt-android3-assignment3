@@ -9,10 +9,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -23,7 +28,7 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.Vector;
 
-public class AddEmployeeActivity extends AppCompatActivity implements View.OnClickListener{
+public class AddEmployeeActivity extends AppCompatActivity implements View.OnClickListener, TextView.OnEditorActionListener{
     private EditText editTextName, editTextAge, editTextBirthday, editTextAddress, editTextJob;
     private Button btnAdd;
     private DatePickerDialog datePickerDialogBirthday;
@@ -60,6 +65,7 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
         btnAdd.setOnClickListener(this);
         editTextBirthday.setOnClickListener(this);
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+        editTextJob.setOnEditorActionListener(this);
     }
 
     @Override
@@ -76,7 +82,6 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
         birthday = editTextBirthday.getText().toString();
         address = editTextAddress.getText().toString();
         job = editTextJob.getText().toString();
-
 
         if (id == R.id.btnAddNew)
         {
@@ -143,5 +148,14 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
         // create alert dialog
         alertDialog = alertDialogBuilder.create();
         return alertDialog;
+    }
+
+    @Override
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        if(actionId == EditorInfo.IME_ACTION_DONE) {
+            System.out.println("You click DONE");
+            return true;
+        }
+        return false;
     }
 }
