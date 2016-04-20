@@ -37,6 +37,7 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
     private AlertDialog alertDialog;
     private AlertDialog.Builder alertDialogBuilder;
     private Employee employee;
+    private InputMethodManager imm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,6 +155,8 @@ public class AddEmployeeActivity extends AppCompatActivity implements View.OnCli
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
         if(actionId == EditorInfo.IME_ACTION_DONE) {
             System.out.println("You click DONE");
+            imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
             return true;
         }
         return false;
