@@ -297,6 +297,19 @@ Trên giao diện activity_add_employee_relativeout_new, nhớ để EditText Jo
         android:layout_height="@dimen/editTextJob_height" />
 
 ```
++ Phương thức để đóng Bàn phím ảo (dùng nút Done trong bàn phím ảo để đóng Bàn phím này)
+```
+ @Override
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        if(actionId == EditorInfo.IME_ACTION_DONE) {
+            System.out.println("You click DONE");
+            imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+            return true;
+        }
+        return false;
+    }
+```
 
 ##Môi trường phát triển
 + Bộ công cụ Android Studio 
